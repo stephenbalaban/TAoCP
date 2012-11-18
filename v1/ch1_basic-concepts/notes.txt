@@ -99,6 +99,101 @@ QED
 
 ## 1.2.2 Numbers, Powers and Logarithms
 
-Z - the integers
+### Numbers
+
+#### Z - the integers
 ..., -3, -2, -1, 0, 1, 2, 3, ...
+
+#### The rational numbers
+
+A rational number is the ratio (quotient) of two integers, p/q, where q is
+positive. 
+
+#### The real numbers
+
+A real number is a quantity x that has a decimal expansion
+        
+    x = n + 0.d1d2d3...,
+
+where n is an integer, each di is a digit between 0 and 9, and the sequence of
+digits doesn't end with infinitely many 9s. The representation 91) means that 
+
+    n + d1/10 + ... + dk/10^k <= x < n + d1/10 + ... + dk/10^k + 1/10^k
+
+#### The complex numbers
+
+A complex number is a quantity z of the orm:
+
+    z = x + iy, where x, y \in R. i^2 = -1
+
+    x + iy (x - iy)
+    x^2 - iyx + iyx + y^2
+    x^2 + y^2
+
+x: real part
+y: imaginary part
+
+|z| = sqrt(x^2 + y^2)
+
+The complex conjugate of z is z(bar) = x - iy, and we have z z(bar) = x^2 + y^2 = |z|^2
+
+### Powers & Logarithms
+
+#### Powers
+
+b^0 = 1,    b^n = b^{n-1}b if n > 0,    b^n = b^{n+1]/b if n < 0
+
+It is easy to prove by induction that the laws of exponents are valid:
+
+    b^{x+y} = b^x b^y,  (b^x)^y = b^{xy}
+
+whenever x and y are integers.
+
+b^{p/q} = \sqrt(q, b^p)
+
+We can define b^x for all real values of x
+
+b^{n + d1/10 + ... + dk/10^k} <= b^x
+
+#### Logarithms
+
+if we have y, can we find some x such that:
+
+y = b^x
+
+we define that
+
+x = b^{\log_b x} = log_b(b^x)
+
+x = 10^log_10 x
+
+x = 2^log_2 x
+
+As an example
+
+log_10 2 = 0.30102999 ...
+
+    log_b(xy) = log_b x + log_b y, if x > 0, y > 0 (11)
+
+and
+
+    log_b(c^y) = y log_b c, if c > 0 (12)
+
+defn lg x = log_2 x (13)
+
+log_10 x = log_10 (2^lg x) = (lg x) (log_10 2) (14)
+
+Fundamental rules for manipulating logarithms
+
+log_c x = log_b x / log_b c
+
+log_b x = log_c x * log_b c
+
+log_b c = log_b x / log_c x
+
+log_10 2 = log_10 x / log_2 x
+
+ln x = log_e x
+
+### 1.2.3 Sums and Products
 
